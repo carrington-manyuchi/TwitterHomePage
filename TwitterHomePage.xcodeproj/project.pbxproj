@@ -16,6 +16,7 @@
 		8C99DF702AB19E1C009381AF /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF6F2AB19E1C009381AF /* SearchVC.swift */; };
 		8C99DF722AB19E3A009381AF /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF712AB19E3A009381AF /* NotificationsVC.swift */; };
 		8C99DF742AB19E4D009381AF /* DirectMessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF732AB19E4D009381AF /* DirectMessagesVC.swift */; };
+		8C99DF772AB1A527009381AF /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF762AB1A527009381AF /* TweetTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8C99DF6F2AB19E1C009381AF /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		8C99DF712AB19E3A009381AF /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
 		8C99DF732AB19E4D009381AF /* DirectMessagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessagesVC.swift; sourceTree = "<group>"; };
+		8C99DF762AB1A527009381AF /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		8C99DF562AB19BFA009381AF /* TwitterHomePage */ = {
 			isa = PBXGroup;
 			children = (
+				8C99DF752AB1A50B009381AF /* Views */,
 				8C99DF6B2AB19DDF009381AF /* Controllers */,
 				8C99DF572AB19BFA009381AF /* AppDelegate.swift */,
 				8C99DF592AB19BFA009381AF /* SceneDelegate.swift */,
@@ -90,6 +93,14 @@
 				8C99DF732AB19E4D009381AF /* DirectMessagesVC.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		8C99DF752AB1A50B009381AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C99DF762AB1A527009381AF /* TweetTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 				8C99DF742AB19E4D009381AF /* DirectMessagesVC.swift in Sources */,
 				8C99DF582AB19BFA009381AF /* AppDelegate.swift in Sources */,
 				8C99DF5A2AB19BFA009381AF /* SceneDelegate.swift in Sources */,
+				8C99DF772AB1A527009381AF /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
