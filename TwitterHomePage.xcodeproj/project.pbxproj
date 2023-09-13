@@ -12,6 +12,10 @@
 		8C99DF5C2AB19BFA009381AF /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF5B2AB19BFA009381AF /* MainTabBarViewController.swift */; };
 		8C99DF612AB19BFD009381AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C99DF602AB19BFD009381AF /* Assets.xcassets */; };
 		8C99DF642AB19BFD009381AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C99DF622AB19BFD009381AF /* LaunchScreen.storyboard */; };
+		8C99DF6E2AB19E0C009381AF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF6D2AB19E0C009381AF /* HomeVC.swift */; };
+		8C99DF702AB19E1C009381AF /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF6F2AB19E1C009381AF /* SearchVC.swift */; };
+		8C99DF722AB19E3A009381AF /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF712AB19E3A009381AF /* NotificationsVC.swift */; };
+		8C99DF742AB19E4D009381AF /* DirectMessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF732AB19E4D009381AF /* DirectMessagesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		8C99DF602AB19BFD009381AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C99DF632AB19BFD009381AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C99DF652AB19BFD009381AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C99DF6D2AB19E0C009381AF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		8C99DF6F2AB19E1C009381AF /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		8C99DF712AB19E3A009381AF /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
+		8C99DF732AB19E4D009381AF /* DirectMessagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessagesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 		8C99DF562AB19BFA009381AF /* TwitterHomePage */ = {
 			isa = PBXGroup;
 			children = (
+				8C99DF6B2AB19DDF009381AF /* Controllers */,
 				8C99DF572AB19BFA009381AF /* AppDelegate.swift */,
 				8C99DF592AB19BFA009381AF /* SceneDelegate.swift */,
 				8C99DF5B2AB19BFA009381AF /* MainTabBarViewController.swift */,
@@ -62,6 +71,25 @@
 				8C99DF652AB19BFD009381AF /* Info.plist */,
 			);
 			path = TwitterHomePage;
+			sourceTree = "<group>";
+		};
+		8C99DF6B2AB19DDF009381AF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C99DF6C2AB19DF1009381AF /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8C99DF6C2AB19DF1009381AF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8C99DF6D2AB19E0C009381AF /* HomeVC.swift */,
+				8C99DF6F2AB19E1C009381AF /* SearchVC.swift */,
+				8C99DF712AB19E3A009381AF /* NotificationsVC.swift */,
+				8C99DF732AB19E4D009381AF /* DirectMessagesVC.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C99DF5C2AB19BFA009381AF /* MainTabBarViewController.swift in Sources */,
+				8C99DF722AB19E3A009381AF /* NotificationsVC.swift in Sources */,
+				8C99DF702AB19E1C009381AF /* SearchVC.swift in Sources */,
+				8C99DF6E2AB19E0C009381AF /* HomeVC.swift in Sources */,
+				8C99DF742AB19E4D009381AF /* DirectMessagesVC.swift in Sources */,
 				8C99DF582AB19BFA009381AF /* AppDelegate.swift in Sources */,
 				8C99DF5A2AB19BFA009381AF /* SceneDelegate.swift in Sources */,
 			);
