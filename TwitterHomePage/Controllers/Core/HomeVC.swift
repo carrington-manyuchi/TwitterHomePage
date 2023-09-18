@@ -9,6 +9,28 @@ import UIKit
 
 class HomeVC: UIViewController {
     
+    
+    // func that add twitter logo
+    
+    private func configureNavigationBar() {
+        let size: CGFloat = 36
+        let logoImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: size, height: size))
+        logoImageView.contentMode = .scaleAspectFill
+        logoImageView.image = UIImage(systemName: "bird")
+        
+        let middleView = UIView(frame: CGRect(x: 0, y: 0, width: size, height: size))
+        middleView.addSubview(logoImageView)
+        navigationItem.titleView = middleView
+        
+        let profileImage = UIImage(systemName: "person")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: profileImage, style: .plain, target: self, action: #selector(didTapProfile))
+    }
+    
+    @objc func didTapProfile() {
+        let vc = ProfileViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     //Anonymous closure
     private let timelineTableView: UITableView = {
         let tableView = UITableView()
@@ -18,8 +40,13 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Twitter"
         setupUI()
+        configureNavigationBar()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = false
     }
     
     override func viewDidLayoutSubviews() {
@@ -36,7 +63,6 @@ class HomeVC: UIViewController {
 }
 
 
-
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,8 +73,30 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TweetTableViewCell.identifier, for: indexPath) as? TweetTableViewCell else {
             return UITableViewCell()
         }
-
+        cell.delegate = self
         return cell
     }
+    
+}
 
+
+extension HomeVC: TweetTableViewCellDelegate {
+    
+    func tweetTableViewCellDidTapReply() {
+        print("Reply")
+    }
+    
+    func tweetTableViewCellDidTapRetweet() {
+        print("Retweet")
+    }
+    
+    func tweetTableViewCellDidTapLike() {
+        print("Likes")
+    }
+    
+    func tweetTableViewCellDidTapShare() {
+        print("Share")
+    }
+    
+ 
 }

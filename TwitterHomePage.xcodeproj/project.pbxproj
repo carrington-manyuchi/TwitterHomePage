@@ -17,6 +17,9 @@
 		8C99DF722AB19E3A009381AF /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF712AB19E3A009381AF /* NotificationsVC.swift */; };
 		8C99DF742AB19E4D009381AF /* DirectMessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF732AB19E4D009381AF /* DirectMessagesVC.swift */; };
 		8C99DF772AB1A527009381AF /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF762AB1A527009381AF /* TweetTableViewCell.swift */; };
+		8C99DF7A2AB30BB8009381AF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF792AB30BB8009381AF /* ProfileViewController.swift */; };
+		8C99DF7C2AB3177B009381AF /* ProfileTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF7B2AB3177B009381AF /* ProfileTableViewHeader.swift */; };
+		8C99DF7E2AB31CAC009381AF /* ProfileFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DF7D2AB31CAC009381AF /* ProfileFooter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		8C99DF712AB19E3A009381AF /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
 		8C99DF732AB19E4D009381AF /* DirectMessagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessagesVC.swift; sourceTree = "<group>"; };
 		8C99DF762AB1A527009381AF /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		8C99DF792AB30BB8009381AF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8C99DF7B2AB3177B009381AF /* ProfileTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewHeader.swift; sourceTree = "<group>"; };
+		8C99DF7D2AB31CAC009381AF /* ProfileFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFooter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		8C99DF6B2AB19DDF009381AF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8C99DF782AB30794009381AF /* General */,
 				8C99DF6C2AB19DF1009381AF /* Core */,
 			);
 			path = Controllers;
@@ -99,8 +106,18 @@
 			isa = PBXGroup;
 			children = (
 				8C99DF762AB1A527009381AF /* TweetTableViewCell.swift */,
+				8C99DF7B2AB3177B009381AF /* ProfileTableViewHeader.swift */,
+				8C99DF7D2AB31CAC009381AF /* ProfileFooter.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8C99DF782AB30794009381AF /* General */ = {
+			isa = PBXGroup;
+			children = (
+				8C99DF792AB30BB8009381AF /* ProfileViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +196,10 @@
 				8C99DF6E2AB19E0C009381AF /* HomeVC.swift in Sources */,
 				8C99DF742AB19E4D009381AF /* DirectMessagesVC.swift in Sources */,
 				8C99DF582AB19BFA009381AF /* AppDelegate.swift in Sources */,
+				8C99DF7A2AB30BB8009381AF /* ProfileViewController.swift in Sources */,
 				8C99DF5A2AB19BFA009381AF /* SceneDelegate.swift in Sources */,
+				8C99DF7E2AB31CAC009381AF /* ProfileFooter.swift in Sources */,
+				8C99DF7C2AB3177B009381AF /* ProfileTableViewHeader.swift in Sources */,
 				8C99DF772AB1A527009381AF /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
